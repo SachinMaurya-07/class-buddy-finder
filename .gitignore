@@ -1,0 +1,24 @@
+# Local/private configuration
+/config.php
+/config.local.php
+/.env
+/.env.*
+!.env.example
+
+# Runtime/user data and uploads
+/uploads/
+/storage/
+/logs/
+*.log
+/data/*.json
+!data/.gitkeep
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Dependencies/build output
+/vendor/
+node_modules/

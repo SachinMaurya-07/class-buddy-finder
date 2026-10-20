@@ -1,0 +1,8 @@
+Options -Indexes
+
+# Prevent direct web access to private configuration and repository metadata.
+<FilesMatch "^(config\.php|config\.example\.php|\.gitignore|README\.md|composer\.(json|lock))$">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+</FilesMatch>
